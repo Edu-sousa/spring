@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="br.org.generation.blogpessoal.model.postagem"/>
     <fullyQualifiedTypeName name="br.org.generation.blogpessoal.repository.PostagemRepository"/>
     <fullyQualifiedTypeName name="antlr.collections.List"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
 </qualifiedTypeNameHistroy>
