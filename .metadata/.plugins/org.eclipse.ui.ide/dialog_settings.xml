@@ -60,4 +60,10 @@
 	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
 		<item key="OUTSIDE_LOCATION" value="C:\Users\usuário\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\Aula_02"/>
 	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.springsource.ide.eclipse.commons.gettingstarted.wizard.boot.NewSpringBootWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.springsource.ide.eclipse.boot.wizards.category"/>
+		</list>
+	</section>
 </section>
