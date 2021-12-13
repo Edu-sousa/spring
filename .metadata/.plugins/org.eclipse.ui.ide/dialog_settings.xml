@@ -50,6 +50,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\usuário\Desktop\Projeto-Integrador\Dandara"/>
+			<item value="C:\Users\usuário\Desktop\Projeto-Integrador\pi_2"/>
+			<item value="C:\Users\usuário\Desktop\demo"/>
 			<item value="C:\Users\usuário\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\Aula_02\blogpessoal"/>
 			<item value="C:\Users\usuário\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\Aula_02\blogpessoal\src"/>
 			<item value="C:\Users\usuário\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\Aula_02\blogpessoal\src\main\java\br\org\generation\blogpessoal"/>
