@@ -18,6 +18,8 @@ public class UsuarioService {
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 	
+	
+	
 	public Optional<Usuario> cadastrarUsuario(Usuario usuario) {
 
 		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
@@ -73,6 +75,8 @@ public class UsuarioService {
 		return encoder.encode(senha);
 
 	}
+	
+	
 	
 	private boolean compararSenhas(String senhaDigitada, String senhaBanco) {
 		
