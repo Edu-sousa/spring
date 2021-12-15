@@ -21,8 +21,8 @@ import br.org.generation.blogpessoal.model.UsuarioLogin;
 import br.org.generation.blogpessoal.repository.UsuarioRepository;
 import br.org.generation.blogpessoal.service.UsuarioService;
 
-@RequestMapping("/usuarios")
 @RestController
+@RequestMapping("/usuarios")
 @CrossOrigin(origins ="*", allowedHeaders = "*")
 public class UsuarioController {
 	

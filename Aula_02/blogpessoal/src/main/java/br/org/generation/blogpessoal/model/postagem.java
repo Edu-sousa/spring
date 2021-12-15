@@ -18,7 +18,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity   // == create table 
 @Table(name ="tb_postagens")   // == tb_postagens(
-
 public class postagem {
 	
 	@Id
