@@ -1,5 +1,10 @@
 package br.org.generation.blogpessoal.repository;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import java.util.List;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,14 +26,47 @@ public class TemaRepositoryTest {
 	@BeforeAll
 	void start(){
 		
-		temaRepository.save(new Tema(0L, "isso representa a descrição "));
-		temaRepository.save(new Tema(0L, "isso representa a descrição 2 "));
-		temaRepository.save(new Tema(0L, "isso representa a descrição 3 "));
+		temaRepository.save(new Tema(0L, "descrição"));
+		temaRepository.save(new Tema(0L, "descrição 2"));
+		temaRepository.save(new Tema(0L, "descrição 3"));
 	}
 	
 	@Test
 	@DisplayName("Retorna 1 Tema")
 	public void deveRetornarUmTema() {
 		
+		List<Tema>tema =(temaRepository.findAllByDescricaoContainingIgnoreCase("descrição"));
+		
+		assertTrue(tema.get(0).getDescrição().equals("descrição"));
 	}
+	
+	
+	
+	@Test
+	@DisplayName("Retorna 2 Temas")
+	public void deveRetornarDoisTemas() {
+		
+		List<Tema> temalista = (temaRepository.findAllByDescricaoContainingIgnoreCase("ão"));
+			
+		assertEquals(3, temalista.size());
+		
+		assertTrue(temalista.get(1).getDescrição().equals("descrição 2"));
+		assertTrue(temalista.get(2).getDescrição().equals("descrição 3"));
+	}
+	
+	@Test
+	@DisplayName("Retorna 1 Tema parte 2")
+	public void retornarUmTema(){
+		
+		List<Tema> temas = (temaRepository.findAllByDescricaoContainingIgnoreCase("3"));
+		
+		
+		//Perguntar sobre isso (pra que o numero 0)
+		assertTrue(temas.get(0).getDescrição().equals("descrição 3"));
+	}
+	
+	
 }
+
+
+

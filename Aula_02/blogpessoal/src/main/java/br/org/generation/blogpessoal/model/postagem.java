@@ -25,11 +25,11 @@ public class postagem {
 	private Long id;
 	
 	@NotBlank (message = "O atributo tipo é obrigatório")
-	@Size(min = 5, max =100, message = "O atributo titulo deve ter no minimo 5 e no maximo 100 caracteres")
+	@Size(min = 5, max =100)
 	private String titulo;
 	
 	@NotNull (message = "O atributo tipo é obrigatório")
-	@Size(min = 10, max =1000, message = "O atributo texto deve ter no minimo 10 e no maximo 1000 caracteres")
+	@Size(min = 10, max =1000)
 	private String texto;
 	
 	

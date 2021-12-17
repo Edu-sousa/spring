@@ -16,6 +16,8 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity	
 @Table(name = "tb_usuario")
 public class Usuario {
@@ -27,6 +29,8 @@ public class Usuario {
 	@NotNull
 	private String nome;
 	
+	
+	@Schema(example = "email@email.com.br")
 	@NotNull
 	@Email
 	private String usuario;
@@ -40,9 +44,6 @@ public class Usuario {
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<postagem>postagem;
-	
-	
-	
 	
 
 	public Usuario(long id, String nome, String usuario, String senha) {

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 
 import br.org.generation.lojagames.model.Usuario;
 
-@Repository
+//@Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	public List<Usuario>findAllByNomeContainingIgnoreCase(String nome);
 	
